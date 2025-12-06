@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TREACT Project</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/6487f0a3d4.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+     <title>TREACT Project</title>
 </head>
 <body>
    <section id="landing">
     <nav>
-        <div class="nav__container nav__row">
+        <div class="row nav__row">
             <div class="nav__logo">
         <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO">
         <div class="nav__logo--title">Treact</div>
@@ -24,6 +25,13 @@
             <li><a href="#" class="nav__link nav__link--primary">Sign up</a></li>
         </ul>
         </div>
+        <button class="btn__menu" onclick="openMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
     </nav>
     <header>
         <div class="container">
@@ -282,7 +290,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="testimonials">
         <div class="container">
             <div class="row">

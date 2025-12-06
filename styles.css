@@ -75,6 +75,14 @@ img {
     cursor: pointer;
 }
 
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    display: none;
+    transition: all 300ms 
+ease;
+}
+
 .btn:hover {
     background-color: rgb(80, 17, 204);
 }
@@ -160,6 +168,10 @@ nav {
     display:flex;
     align-items: center;
     padding-bottom: 2px;
+}
+
+.nav__link {
+    margin: 0 24px;
 }
 
 .nav__link {
@@ -336,12 +348,6 @@ header {
     padding: 80px 0;
 }
 
-.row__narrow { 
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 section { 
     padding: 0 32px;
 }
@@ -353,13 +359,13 @@ FEATURES
 */
 
 #features {
-    position: relative;
+  position: relative;
 }
 
-#features .row__narrow{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#features .row__narrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #features .section__title,
@@ -368,22 +374,18 @@ FEATURES
 }
 
 #features .section__para {
-    text-align: center;
-    max-width: 576px;
+  text-align: center;
+  max-width: 576px;
 }
 
 .features {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .feature {
-    width: calc(100% / 3);
-    display: flex;
-    justify-content: center;
-    padding: 0 24px;
-    flex-direction: column;
+  width: calc(100% / 3);
 }
 
 .feature__row {
@@ -403,9 +405,35 @@ FEATURES
   width: 24px;
   height: 24px;
 }
+
 .feature__text {
   margin-top: 8px;
   margin-left: 16px;
+}
+
+.feature__para {
+  margin-top: 16px;
+  font-size: 16px;
+  max-width: calc(634px / 3);
+  color: rgb(124, 139, 161);
+  line-height: 2;
+  font-weight: 500;
+}
+
+.features__blob {
+  transform: translateX(96px) translateY(192px) scaleX(1) scaleY(1);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 16rem;
+  opacity: 0.25;
+  padding: 16px;
+}
+
+.row__narrow {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 /* 
@@ -1262,6 +1290,7 @@ RESPONSIVENESS
   .nav__links {
     display: none;
   }
+  
   .btn__menu {
     display: block;
   }
